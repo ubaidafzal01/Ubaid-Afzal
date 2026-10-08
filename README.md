@@ -63,12 +63,6 @@ Then open http://localhost:5173.
 - Colours: edit the variables at the top of `style.css`.
 - Fluid feel: tweak `config` at the top of `fluid.js`.
 
-## 🙏 Credits
-
-- Design inspired by the [Toukoum AI portfolio](https://github.com/toukoum/portfolio). This is an independent rebuild as a static, scrollable site.
-- Fluid simulation technique based on Pavel Dobryakov's [WebGL Fluid Simulation](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) (MIT).
-- Icons drawn in the style of [Lucide](https://lucide.dev).
-
 ## 📬 Contact
 
 **Email:** ubaidafzal117@gmail.com · **LinkedIn:** [ubaid-afzal](https://www.linkedin.com/in/ubaid-afzal-06483137b/) · **GitHub:** [@ubaidafzal01](https://github.com/ubaidafzal01)
