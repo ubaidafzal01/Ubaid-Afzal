@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ubaid Afzal — Portfolio</title>
+  <meta name="description" content="Portfolio of Ubaid Afzal — projects, skills and contact." />
+  <link rel="stylesheet" href="style.css?v=13" />
+</head>
+<body>
+  <!-- Fluid "ink" cursor effect (rendered by fluid.js) sitting behind everything -->
+  <canvas id="fluid" aria-hidden="true"></canvas>
+
+
+  <!-- Floating dock: appears once you scroll past the hero -->
+  <nav class="dock glass" id="dock" aria-label="Sections">
+    <a href="#me"><svg class="ic c-me" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></svg><span>Me</span></a>
+    <a href="#projects"><svg class="ic c-projects" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Projects</span></a>
+    <a href="#skills"><svg class="ic c-skills" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><span>Skills</span></a>
+    <a href="#fun"><svg class="ic c-fun" viewBox="0 0 24 24"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg><span>Fun</span></a>
+    <a href="#contact"><svg class="ic c-contact" viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/></svg><span>Contact</span></a>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <p class="hey reveal-hero" style="--d:80ms">Hey, I'm Ubaid <span class="wave">👋</span></p>
+      <!-- Typing animation: edit the titles in data-words (separated by |) -->
+      <h1 class="title reveal-hero" style="--d:160ms" aria-label="Software Engineer, Backend Engineer, Distributed Systems Engineer">
+        <span class="typed" data-words="Software Engineer|Backend Engineer|Distributed Systems Engineer">Software Engineer</span><span class="caret" aria-hidden="true"></span>
+      </h1>
+
+      <!-- Hero picture: assets/me.png (background removed). About box uses assets/photo.jpg -->
+      <div class="avatar reveal-hero" style="--d:260ms">
+        <img src="assets/me.png" alt="Ubaid Afzal" onerror="this.parentElement.classList.add('no-photo')" />
+        <span class="avatar-fallback">Your photo<br/><small>assets/me.png</small></span>
+      </div>
+
+      <a class="hero-pill glass reveal-hero" style="--d:360ms" href="#me">
+        <span>Scroll to know more about me…</span>
+        <span class="go"><svg viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></span>
+      </a>
+
+      <div class="hero-cards reveal-hero" style="--d:440ms">
+        <a class="hero-card glass" href="#me"><svg class="ic c-me" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></svg>Me</a>
+        <a class="hero-card glass" href="#projects"><svg class="ic c-projects" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Projects</a>
+        <a class="hero-card glass" href="#skills"><svg class="ic c-skills" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>Skills</a>
+        <a class="hero-card glass" href="#fun"><svg class="ic c-fun" viewBox="0 0 24 24"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.960 3.12c.1.86-.57 1.630-1.450 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg>Fun</a>
+        <a class="hero-card glass" href="#contact"><svg class="ic c-contact" viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/></svg>Contact</a>
+      </div>
+
+      <!-- Giant faded name behind the hero -->
+      <div class="big-name" aria-hidden="true">Ubaid Afzal</div>
+    </section>
+
+    <!-- ============ ME ============ -->
+    <section class="section" id="me">
+      <h2 class="section-title reveal"><svg class="ic c-me" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></svg>About me</h2>
+      <div class="about glass box reveal">
+        <div class="about-photo">
+          <img src="assets/photo.jpg" alt="Ubaid Afzal" onerror="this.parentElement.classList.add('no-photo')" />
+          <span class="avatar-fallback">Your photo</span>
+        </div>
+        <div class="about-text">
+          <h3>Ubaid Afzal</h3>
+          <p class="meta">20 years old <span class="dot">•</span> Chiniot, Pakistan</p>
+          <p class="lead">Hey 👋<br/>
+            I'm Ubaid, a Computer Science student at FAST University. Right now I'm focused on building strong
+            fundamentals in data structures &amp; algorithms, system design and, most of all, distributed systems.
+            I enjoy digging into how large-scale systems stay fast and reliable, and I learn best by building
+            small projects that put those ideas into practice.</p>
+          <div class="chips">
+            <span class="chip">CS Student</span><span class="chip">FAST University</span><span class="chip">Distributed Systems</span><span class="chip">System Design</span><span class="chip">DSA</span><span class="chip">Backend</span>
+          </div>
+          <a class="cv-btn glass about-cv" href="assets/Ubaid-Afzal-CV.pdf" download><svg class="ic" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download CV</a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="glass box stat reveal"><b>3rd</b><span>Semester at FAST</span></div>
+        <div class="glass box stat reveal"><b>2+</b><span>Years coding</span></div>
+        <div class="glass box stat reveal"><b>150+</b><span>Problems solved</span></div>
+        <div class="glass box stat reveal"><b>8+</b><span>Projects built</span></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <h2 class="section-title reveal"><svg class="ic c-projects" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Projects</h2>
+      <!-- EDIT: duplicate an <article> per project. Put screenshots in assets/ and set the <img src>. -->
+      <div class="grid projects">
+        <!-- Mealopia (details + live links open popups, see the <dialog>s at the end of <main>) -->
+        <article class="glass box project reveal">
+          <div class="thumb thumb-logo"><img src="assets/mealopia-logo.png" alt="Mealopia logo" /><span class="badge live thumb-badge"><span class="live-dot"></span>Live</span></div>
+          <h3>Mealopia</h3>
+          <p>My food &amp; grocery delivery startup, live in Chiniot. Four Flutter apps running on a Firebase and Cloud Functions backend.</p>
+          <div class="chips small"><span class="chip">Flutter</span><span class="chip">Firebase</span><span class="chip">Cloud Functions</span><span class="chip">Node.js</span></div>
+          <div class="links"><button type="button" data-open="mealopia-live">Live ↗</button><button type="button" data-open="mealopia-details">Details</button></div>
+        </article>
+        <!-- C++ Quiz Game -->
+        <article class="glass box project reveal">
+          <div class="thumb t2 thumb-text"><span class="thumb-emoji">🧠</span><span>Terminal Trivia</span><span class="badge thumb-badge">University · 2nd semester</span></div>
+          <h3>C++ Quiz Game</h3>
+          <p>A console trivia game with 5 categories, 3 difficulty levels, a 10-second timer, lifelines and a 2-player mode. Built in a team of three.</p>
+          <div class="chips small"><span class="chip">C++</span><span class="chip">File Handling</span><span class="chip">Sorting</span><span class="chip">Team of 3</span></div>
+          <div class="links"><a href="https://github.com/ubaidafzal01/QUIZ-GAME-IN-CPP" target="_blank" rel="noopener">Code ↗</a><button type="button" data-open="quiz-details">Details</button></div>
+        </article>
+        <!-- Flexin shoe store website -->
+        <article class="glass box project reveal">
+          <div class="thumb thumb-shot"><img src="assets/flexin.jpg" alt="Flexin shoe store homepage" /><span class="badge thumb-badge">University · 1st semester</span></div>
+          <h3>Flexin: Shoe Brand Website</h3>
+          <p>A multi-page, responsive shoe store website with Men, Women and Kids collections, an image slider and a dark/light theme.</p>
+          <div class="chips small"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Responsive</span></div>
+          <div class="links"><a href="https://github.com/ubaidafzal01/FLEXIN-SHOE-BRAND-WEBSITE-FINAL-PROJECT-ICT" target="_blank" rel="noopener">Code ↗</a><button type="button" data-open="flexin-details">Details</button></div>
+        </article>
+        <!-- Laham Cattle Farm (client website) -->
+        <article class="glass box project reveal">
+          <div class="thumb thumb-hero"><img src="assets/laham.jpg" alt="Laham Cattle Farm website hero" /><span class="thumb-overlay"><small>Premium livestock farming</small>Laham Cattle Farm</span><span class="badge thumb-badge">Client project</span></div>
+          <h3>Laham Cattle Farm</h3>
+          <p>A showcase website I built for a local cattle farm, presenting their Qurbani animals and premium meat supply, with a gallery, location map and contact form.</p>
+          <div class="chips small"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">Framer Motion</span></div>
+          <div class="links"><a href="https://github.com/ubaidafzal01/Laham-cattle-farm.com" target="_blank" rel="noopener">Code ↗</a><button type="button" data-open="laham-details">Details</button></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <h2 class="section-title reveal"><svg class="ic c-skills" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>Skills</h2>
+      <div class="grid skills">
+        <div class="glass box reveal"><h3 class="skill-title"><svg class="ic c-skills" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Programming Languages</h3><div class="chips"><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Dart</span><span class="chip">HTML</span><span class="chip">CSS</span></div></div>
+        <div class="glass box reveal"><h3 class="skill-title"><svg class="ic c-projects" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>Backend &amp; Cloud</h3><div class="chips"><span class="chip">Node.js</span><span class="chip">Firebase</span><span class="chip">Cloud Firestore</span><span class="chip">Cloud Functions</span><span class="chip">Firebase Auth</span><span class="chip">FCM</span><span class="chip">REST APIs</span></div></div>
+        <div class="glass box reveal"><h3 class="skill-title"><svg class="ic c-me" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>Frontend &amp; Mobile</h3><div class="chips"><span class="chip">Flutter</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span></div></div>
+        <div class="glass box reveal"><h3 class="skill-title"><svg class="ic c-fun" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>CS Fundamentals</h3><div class="chips"><span class="chip">Data Structures &amp; Algorithms</span><span class="chip">OOP</span><span class="chip">System Design</span><span class="chip">Distributed Systems</span></div></div>
+        <div class="glass box reveal"><h3 class="skill-title"><svg class="ic c-contact" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Vercel</span><span class="chip">Figma</span></div></div>
+        <div class="glass box reveal"><h3 class="skill-title"><svg class="ic c-blue" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>Spoken Languages</h3><div class="chips"><span class="chip">English</span><span class="chip">Urdu</span><span class="chip">Punjabi</span></div></div>
+      </div>
+    </section>
+
+    <!-- ============ FUN ============ -->
+    <section class="section" id="fun">
+      <h2 class="section-title reveal"><svg class="ic c-fun" viewBox="0 0 24 24"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.170 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg>Fun stuff</h2>
+      <div class="grid fun">
+        <div class="glass box fun-card reveal"><span class="fun-icon"><svg class="ic c-skills" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg></span><h3>Gaming</h3><p>My favourite way to unwind after a long day of classes and code.</p></div>
+        <div class="glass box fun-card reveal"><span class="fun-icon"><svg class="ic c-blue" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span><h3>Travelling</h3><p>Exploring new cities and places whenever I get the chance.</p></div>
+        <div class="glass box fun-card reveal"><span class="fun-icon"><svg class="ic c-projects" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg></span><h3>Coding</h3><p>Yes, even for fun: side projects, experiments and late-night problem solving.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <h2 class="section-title reveal"><svg class="ic c-contact" viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/></svg>Contact</h2>
+      <div class="glass box contact reveal">
+        <h3>Let's work together</h3>
+        <p>Have a project, an internship or just want to say hi? My inbox is always open.</p>
+        <!-- EDIT: your email -->
+        <div class="cta-row">
+          <a class="cta" href="mailto:ubaidafzal117@gmail.com">
+          ubaidafzal117@gmail.com
+          <span class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </a>
+          <a class="cv-btn glass" href="assets/Ubaid-Afzal-CV.pdf" download><svg class="ic" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download CV</a>
+        </div>
+        <div class="socials">
+          <a class="glass" href="https://github.com/ubaidafzal01" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a>
+          <a class="glass" href="https://www.linkedin.com/in/ubaid-afzal-06483137b/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
+          <a class="glass" href="https://wa.me/923097894707" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>WhatsApp</a>
+        </div>
+      </div>
+    </section>
+    <!-- ============ POPUPS ============ -->
+    <dialog class="modal glass" id="mealopia-details" aria-labelledby="md-title">
+      <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+      <div class="modal-head">
+        <img class="modal-logo" src="assets/mealopia-logo.png" alt="" />
+        <div>
+          <h3 id="md-title">Mealopia</h3>
+          <p class="subtitle">Food &amp; grocery delivery platform</p>
+        </div>
+      </div>
+      <div class="badges"><span class="badge live"><span class="live-dot"></span>Live in Chiniot</span><span class="badge">Founder</span></div>
+      <p>My own startup. Customers order food and groceries from local restaurants and stores, and nearby riders deliver
+        them. I designed and built the whole ecosystem end to end: four Flutter apps (Customer, Restaurant, Rider and Admin)
+        sharing one Dart package, powered by a Firebase backend.</p>
+      <h4>What I built</h4>
+      <ul class="highlights">
+        <li><b>Event-driven backend</b> on Cloud Functions: Firestore triggers for order notifications, a rider-matching
+          engine that ranks nearby riders fairly and sends them offers, and scheduled jobs that re-offer stale orders.</li>
+        <li><b>Server-side money logic</b>: delivery fees, commissions, payouts and rider cash settlement as pure,
+          unit-tested modules with transactional, idempotent writes and audit logs.</li>
+        <li><b>Secure by default</b>: deny-by-default Firestore rules with least-privilege access per collection and
+          role-based admin access.</li>
+        <li><b>Real-time everything</b>: live order status and push notifications (FCM) across the apps.</li>
+        <li><b>Admin panel</b> for orders, restaurants, riders, payouts, the cash ledger, support and audit logs.</li>
+        <li><b>Marketing website</b> at mealopia.com built with Next.js, Tailwind and Framer Motion.</li>
+      </ul>
+      <h4>Tech stack</h4>
+      <div class="chips small"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Riverpod</span><span class="chip">Firebase Auth</span><span class="chip">Cloud Firestore</span><span class="chip">Cloud Functions</span><span class="chip">Node.js</span><span class="chip">Firebase Storage</span><span class="chip">FCM</span><span class="chip">Next.js</span><span class="chip">Tailwind</span></div>
+      <div class="modal-actions"><button type="button" class="cta small" data-open="mealopia-live">See it live ↗</button></div>
+    </dialog>
+
+    <dialog class="modal modal-sm glass" id="mealopia-live" aria-labelledby="ml-title">
+      <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+      <div class="modal-head">
+        <img class="modal-logo" src="assets/mealopia-logo.png" alt="" />
+        <div>
+          <h3 id="ml-title">See Mealopia live</h3>
+          <p class="subtitle">Where do you want to go?</p>
+        </div>
+      </div>
+      <div class="choices">
+        <a class="choice glass" href="https://play.google.com/store/apps/details?id=com.mealopia.app" target="_blank" rel="noopener">
+          <span class="choice-icon">📱</span>
+          <span><b>Mobile app</b><small>Get it on Google Play · iOS coming soon</small></span>
+          <span class="choice-arrow">↗</span>
+        </a>
+        <a class="choice glass" href="https://mealopia.com" target="_blank" rel="noopener">
+          <span class="choice-icon">🌐</span>
+          <span><b>Website</b><small>mealopia.com</small></span>
+          <span class="choice-arrow">↗</span>
+        </a>
+      </div>
+    </dialog>
+    <dialog class="modal glass" id="quiz-details" aria-labelledby="qd-title">
+      <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+      <div class="modal-head">
+        <span class="modal-logo modal-emoji">🧠</span>
+        <div>
+          <h3 id="qd-title">C++ Quiz Game</h3>
+          <p class="subtitle">Terminal Trivia · console quiz application</p>
+        </div>
+      </div>
+      <div class="badges"><span class="badge">University · 2nd semester</span><span class="badge">Team of 3</span></div>
+      <p>A full console quiz application written in C++ for our second-semester project. Questions are loaded from
+        text files at runtime, and everything (questions, high scores, game logs) is saved to files.</p>
+      <h4>Features</h4>
+      <ul class="highlights">
+        <li><b>5 categories</b> (General Knowledge, Science, and more), 10 questions per game with a <b>10-second timer</b> per question.</li>
+        <li><b>3 difficulty levels</b> with different penalties for wrong answers (−2, −3 and −5 points).</li>
+        <li><b>Lifelines</b>, each usable once: 50/50, Skip and Swap question.</li>
+        <li><b>Single-player and 2-player</b> head-to-head mode on the same console.</li>
+        <li>Randomised questions, streak tracking and input validation so bad input never crashes the game.</li>
+      </ul>
+      <h4>My part</h4>
+      <ul class="highlights">
+        <li><b>Leaderboard</b>: loads player scores from file, sorts them and shows the top 5.</li>
+        <li><b>Admin mode</b> for adding new questions to the question files.</li>
+        <li><b>Game review</b> at the end of each round, showing every question, your answer and the correct one.</li>
+        <li><b>Activity log</b> that records each game automatically.</li>
+      </ul>
+      <h4>Tech</h4>
+      <div class="chips small"><span class="chip">C++</span><span class="chip">File Handling</span><span class="chip">Arrays</span><span class="chip">Sorting</span><span class="chip">Randomisation</span><span class="chip">Modular design</span></div>
+      <div class="modal-actions"><a class="cta small" href="https://github.com/ubaidafzal01/QUIZ-GAME-IN-CPP" target="_blank" rel="noopener">View code on GitHub ↗</a></div>
+    </dialog>
+    <dialog class="modal glass" id="flexin-details" aria-labelledby="fd-title">
+      <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+      <div class="modal-head">
+        <span class="modal-logo modal-emoji">👟</span>
+        <div>
+          <h3 id="fd-title">Flexin: Shoe Brand Website</h3>
+          <p class="subtitle">ICT final project · "Where comfort meets power"</p>
+        </div>
+      </div>
+      <div class="badges"><span class="badge">University · 1st semester</span><span class="badge">ICT final project</span></div>
+      <img class="modal-shot" src="assets/flexin.jpg" alt="Flexin homepage screenshot" />
+      <p>My first web project: a modern, responsive storefront for a sneaker brand, built from scratch with plain
+        HTML, CSS and JavaScript (no frameworks).</p>
+      <h4>Features</h4>
+      <ul class="highlights">
+        <li><b>Multi-page site</b>: homepage plus separate Men, Women and Kids product pages and a Contact page.</li>
+        <li><b>Hero image slider</b> with arrows and dot navigation.</li>
+        <li><b>Dark / light theme</b> toggle with smooth colour transitions across every page.</li>
+        <li><b>Responsive navbar</b> with a hamburger menu on mobile and a search overlay.</li>
+        <li><b>Product card grids</b> with images, descriptions, prices and hover animations.</li>
+      </ul>
+      <h4>Tech</h4>
+      <div class="chips small"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Responsive design</span><span class="chip">DOM manipulation</span></div>
+      <div class="modal-actions"><a class="cta small" href="https://github.com/ubaidafzal01/FLEXIN-SHOE-BRAND-WEBSITE-FINAL-PROJECT-ICT" target="_blank" rel="noopener">View code on GitHub ↗</a></div>
+    </dialog>
+    <dialog class="modal glass" id="laham-details" aria-labelledby="ld-title">
+      <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+      <div class="modal-head">
+        <span class="modal-logo modal-emoji">🐄</span>
+        <div>
+          <h3 id="ld-title">Laham Cattle Farm</h3>
+          <p class="subtitle">Showcase website for a local farm</p>
+        </div>
+      </div>
+      <div class="badges"><span class="badge">Client project</span><span class="badge">Built for a local business</span></div>
+      <img class="modal-shot" src="assets/laham.jpg" alt="Laham Cattle Farm hero image" />
+      <p>A modern multi-page website I built for a local customer's cattle farm, to present their Qurbani animals and
+        premium halal meat supply and make it easy for buyers to get in touch.</p>
+      <h4>Features</h4>
+      <ul class="highlights">
+        <li><b>Six pages</b>: Home, About, Services, Gallery, Location and Contact, built with the Next.js App Router.</li>
+        <li><b>Animated hero and sections</b> using Framer Motion, plus animated counters (years of experience, cattle, happy customers).</li>
+        <li><b>Contact form</b> with React Hook Form and Zod validation that sends enquiries by email through EmailJS.</li>
+        <li><b>Location page</b> with an embedded Google Map so customers can find the farm.</li>
+        <li><b>Fully responsive</b>, styled with Tailwind CSS, with reusable typed components.</li>
+      </ul>
+      <h4>Tech</h4>
+      <div class="chips small"><span class="chip">Next.js</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">Framer Motion</span><span class="chip">React Hook Form</span><span class="chip">Zod</span><span class="chip">EmailJS</span><span class="chip">Google Maps</span></div>
+      <div class="modal-actions"><a class="cta small" href="https://github.com/ubaidafzal01/Laham-cattle-farm.com" target="_blank" rel="noopener">View code on GitHub ↗</a></div>
+    </dialog>
+  </main>
+
+  <footer>© <span id="year"></span> Ubaid Afzal · Built with ❤️</footer>
+
+  <script src="fluid.js?v=13"></script>
+  <script src="script.js?v=13"></script>
+</body>
+</html>
