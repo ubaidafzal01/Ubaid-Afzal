@@ -28,7 +28,7 @@ CS student at FAST University, founder of [Mealopia](https://mealopia.com)
 | **Hero** | Photo, typing title, quick-jump glass cards |
 | **About** | Bio, tags, stats, CV download |
 | **Projects** | Mealopia · C++ Quiz Game · Flexin Shoe Store · Laham Cattle Farm |
-| **Skills** | Tech-stack logos: languages, backend & cloud, frontend & mobile, tools, core CS |
+| **Skills** | Tech-stack logos: languages, backend & cloud, tools, core CS |
 | **Fun** | Gaming, travelling, coding |
 | **Contact** | Email, CV, GitHub, LinkedIn, WhatsApp |
 
