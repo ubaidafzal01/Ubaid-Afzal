@@ -5,7 +5,7 @@
 **Software Engineer · Backend Engineer · Distributed Systems Engineer**
 CS student at FAST University, founder of [Mealopia](https://mealopia.com)
 
-### 🌐 [ubaidafzal01.github.io](https://ubaidafzal01.github.io)
+### 🌐 [ubaidafzal01.github.io/Ubaid-Afzal](https://ubaidafzal01.github.io/Ubaid-Afzal/)
 
 ![Portfolio hero](screenshots/hero.jpg)
 
@@ -28,7 +28,7 @@ CS student at FAST University, founder of [Mealopia](https://mealopia.com)
 | **Hero** | Photo, typing title, quick-jump glass cards |
 | **About** | Bio, tags, stats, CV download |
 | **Projects** | Mealopia · C++ Quiz Game · Flexin Shoe Store · Laham Cattle Farm |
-| **Skills** | Languages, backend & cloud, frontend & mobile, CS fundamentals, tools |
+| **Skills** | Tech-stack logos: languages, backend & cloud, frontend & mobile, tools, core CS |
 | **Fun** | Gaming, travelling, coding |
 | **Contact** | Email, CV, GitHub, LinkedIn, WhatsApp |
 
@@ -49,8 +49,8 @@ CS student at FAST University, founder of [Mealopia](https://mealopia.com)
 ## 🚀 Run locally
 
 ```bash
-git clone https://github.com/ubaidafzal01/ubaidafzal01.github.io.git
-cd ubaidafzal01.github.io
+git clone https://github.com/ubaidafzal01/Ubaid-Afzal.git
+cd Ubaid-Afzal
 python3 -m http.server 5173
 ```
 
