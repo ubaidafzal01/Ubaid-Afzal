@@ -2,7 +2,7 @@
 
 # Ubaid Afzal · Portfolio
 
-**Software Engineer · Backend Engineer · Distributed Systems Engineer**
+**Software Engineer · Backend Engineer · Prompt Engineer**
 CS student at FAST University, founder of [Mealopia](https://mealopia.com)
 
 ### 🌐 [ubaidafzal01.github.io/Ubaid-Afzal](https://ubaidafzal01.github.io/Ubaid-Afzal/)
@@ -15,7 +15,7 @@ CS student at FAST University, founder of [Mealopia](https://mealopia.com)
 
 - **Fluid ink cursor:** a real-time WebGL fluid simulation (advection, vorticity and pressure solve) that swirls colourful ink behind the page as you move the mouse
 - **Glassmorphism UI:** frosted-glass cards, buttons and popups (`backdrop-filter`) on top of the fluid
-- **Typing title:** cycles through *Software Engineer → Backend Engineer → Distributed Systems Engineer*
+- **Typing title:** cycles through *Software Engineer → Backend Engineer → Prompt Engineer*
 - **Project popups:** native `<dialog>` modals with full project details and a "see it live" chooser (mobile app or website)
 - **Smooth scrolling one-pager** with a floating dock that highlights the current section, plus scroll-reveal animations
 - **Responsive and accessible:** works down to phone width and respects `prefers-reduced-motion`
